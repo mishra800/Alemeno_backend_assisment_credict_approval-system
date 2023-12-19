@@ -1,8 +1,8 @@
-Key Components of a Credit Approval System:
+**Key Components of a Credit Approval System:**
 Customer Data:
 
 Includes personal information about the customer, such as name, phone number, monthly salary, current debt, and approved credit limit.
-Loan Data:
+**Loan Data:**
 
 Contains details about past and existing loans, such as loan amount, tenure, interest rate, monthly repayment (EMI), EMIs paid on time, start date, and end date.
 Credit Score Calculation:
@@ -11,7 +11,7 @@ The system evaluates a customer's credit score based on various factors, includi
 Loan Eligibility Assessment:
 
 Determines whether a customer is eligible for a new loan based on their credit score. Criteria may include credit rating thresholds, the number of current loans, and the relationship between current EMIs and monthly salary.
-Loan Approval Criteria:
+**Loan Approval Criteria**:
 
 Defines specific rules for approving loans based on credit scores:
 If credit rating > 50, approve the loan.
@@ -22,7 +22,7 @@ If the sum of all current EMIs > 50% of monthly salary, do not approve any loans
 Correction of Interest Rate:
 
 If the interest rate specified in the loan request does not match the credit limit, the system corrects the interest rate to the appropriate value.
-API Endpoints:
+**API Endpoints:**
 Ingest Data:
 
 Background task to ingest customer and loan data from Excel files into the system.
@@ -38,8 +38,8 @@ API to retrieve details about a specific loan, including customer information, l
 View All Loans by Customer:
 
 API to retrieve a list of all current loans for a given customer, including loan ID, amount, interest rate, monthly installment, and repayments left.
-General Guidelines:
-Ensure code quality, organization, and segregation of responsibilities.
-Dockerize the application and use PostgreSQL as the database.
-Consider adding unit tests for bonus points in code assessment.
-Implementing a Credit Approval System helps financial institutions make informed decisions, mitigating risks associated with extending credit while providing individuals with access to financial resources.
+**General Guidelines:**
+1.Ensure code quality, organization, and segregation of responsibilities.
+2.Dockerize the application and use PostgreSQL as the database.
+3.Consider adding unit tests for bonus points in code assessment.
+4.Implementing a Credit Approval System helps financial institutions make informed decisions, mitigating risks associated with extending credit while providing individuals with access to financial resources.
